@@ -1,0 +1,36 @@
+﻿{
+	"editors": [
+		{
+			"type": "method",
+			"id": 2147483647,
+			"previousTabType": "method",
+			"previousTabID": 2147483644,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TEST"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483644,
+			"previousTabType": "form",
+			"previousTabID": 84,
+			"codeDescriptor": {
+				"type": 2,
+				"table": 2,
+				"formName": "TEST",
+				"objectName": "Button",
+				"methodPath": "/SOURCES/TableForms/2/TEST/ObjectMethods/Button.4dm"
+			}
+		},
+		{
+			"type": "form",
+			"id": 84,
+			"table": 2,
+			"formName": "TEST"
+		},
+		{
+			"type": "structure"
+		}
+	]
+}

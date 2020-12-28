@@ -1,0 +1,47 @@
+﻿{
+	"Sources/Forms/TEST/method.4dm": {
+		"startSelection": 26,
+		"endSelection": 26,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-12-28T04:34:30.049Z"
+	},
+	"Sources/Forms/TEST/ObjectMethods/Button.4dm": {
+		"startSelection": 27,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-12-28T04:34:31.524Z"
+	},
+	"Sources/Methods/TEST.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 94,
+		"lastSelectedLine": 94,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-12-28T05:35:41.091Z"
+	},
+	"Sources/TableForms/2/TEST/ObjectMethods/Button.4dm": {
+		"startSelection": 15,
+		"endSelection": 0,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-12-28T05:22:43.051Z"
+	},
+	"Sources/TableForms/2/TEST/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-12-28T05:32:05.783Z"
+	}
+}

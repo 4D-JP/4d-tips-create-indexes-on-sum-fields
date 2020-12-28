@@ -1,0 +1,1 @@
+$sum:=Sum:C1([Table_1:1]Field_2:2)

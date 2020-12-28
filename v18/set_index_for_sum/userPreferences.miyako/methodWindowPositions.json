@@ -1,0 +1,32 @@
+﻿{
+	"Sources/Forms/TEST/method.4dm": {
+		"left": 485,
+		"top": 574,
+		"width": 934,
+		"height": 658
+	},
+	"Sources/Forms/TEST/ObjectMethods/Button.4dm": {
+		"left": 485,
+		"top": 574,
+		"width": 934,
+		"height": 658
+	},
+	"Sources/Methods/TEST.4dm": {
+		"left": 440,
+		"top": 131,
+		"width": 934,
+		"height": 606
+	},
+	"Sources/TableForms/2/TEST/ObjectMethods/Button.4dm": {
+		"left": 344,
+		"top": 314,
+		"width": 934,
+		"height": 606
+	},
+	"Sources/TableForms/2/TEST/method.4dm": {
+		"left": 572,
+		"top": 158,
+		"width": 934,
+		"height": 632
+	}
+}
