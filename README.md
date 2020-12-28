@@ -22,6 +22,8 @@ $sum:=Sum(Field(2;3)->)
 $p:=->[Table_1]Field_2
 // …
 $sum:=Sum($p->)
+
+$sum:=Sum(Field($t;$f)->)
 ```
 
 解析できなかったコードの情報はログファイルに出力されます。
