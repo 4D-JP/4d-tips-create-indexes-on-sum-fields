@@ -2,9 +2,9 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483642,
+			"id": 2147483647,
 			"previousTabType": "method",
-			"previousTabID": 2147483647,
+			"previousTabID": 2147483646,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "CODE"
@@ -12,9 +12,9 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483647,
+			"id": 2147483646,
 			"previousTabType": "method",
-			"previousTabID": 2147483646,
+			"previousTabID": 2147483645,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "TEST"
@@ -22,9 +22,9 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483646,
+			"id": 2147483645,
 			"previousTabType": "form",
-			"previousTabID": 2,
+			"previousTabID": 242,
 			"codeDescriptor": {
 				"type": 2,
 				"table": 2,
@@ -35,7 +35,7 @@
 		},
 		{
 			"type": "form",
-			"id": 2,
+			"id": 242,
 			"table": 2,
 			"formName": "TEST"
 		},

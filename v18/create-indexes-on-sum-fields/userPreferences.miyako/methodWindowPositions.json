@@ -12,10 +12,10 @@
 		"height": 658
 	},
 	"Sources/Methods/TEST.4dm": {
-		"left": 249,
-		"top": 185,
+		"left": 344,
+		"top": 314,
 		"width": 934,
-		"height": 624
+		"height": 606
 	},
 	"Sources/TableForms/2/TEST/ObjectMethods/Button.4dm": {
 		"left": 344,
@@ -30,9 +30,9 @@
 		"height": 632
 	},
 	"Sources/Methods/CODE.4dm": {
-		"left": 249,
-		"top": 185,
+		"left": 344,
+		"top": 314,
 		"width": 934,
-		"height": 624
+		"height": 606
 	}
 }
