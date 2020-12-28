@@ -1,7 +1,7 @@
 # 4d-tips-create-indexes-on-sum-fields.md
 すべてのSumフィールドにインデックスを設定する例題
 
-[メソッド](https://github.com/4D-JP/4d-tips-create-indexes-on-sum-fields/blob/main/v18/set_index_for_sum/Project/Sources/Methods/TEST.4dm)
+[メソッド](/blob/main/v18/reate-indexes-on-sum-fields/Project/Sources/Methods/TEST.4dm)
 
 数値フィールドにインデックスが設定されていないストラクチャが対象です。
 
