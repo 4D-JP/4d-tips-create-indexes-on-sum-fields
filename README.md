@@ -34,19 +34,17 @@ $sum:=Sum($p->)
 ]
 ```
 
-インデックスを追加したフィールドの情報はログファイルに出力されます。
+`$dry_run`を`True`に設定した場合，インデックスを追加するためのコードがファイルに出力され，ペーストボードにセットされます。
 
 ```4d
-[
-	{
-		"table": 2,
-		"field": 3
-	},
-	{
-		"table": 2,
-		"field": 4
-	}
-]
+ARRAY POINTER:C280($fieldsArray;1)
+$fieldsArray{1}:=Field:C253(1;3)
+CREATE INDEX:C966(Table:C252(1)->;$fieldsArray;1;"";*)
+ARRAY POINTER:C280($fieldsArray;1)
+$fieldsArray{1}:=Field:C253(1;2)
+CREATE INDEX:C966(Table:C252(1)->;$fieldsArray;1;"";*)
 ```
 
 すでにインデックスが設定されている場合はスキップします。
+
+`$dry_run`を`False`に設定した場合，実際にインデックスが作成されます。
