@@ -28,7 +28,7 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<index kind="regular" uuid="23E4FB4D1F654516ABDC650614CF1E13" type="1">
+	<index kind="regular" uuid="42FCA8B4278C415C805ABD47E0F28E12" type="1">
 		<field_ref uuid="341515999E0644BD876A9E08B9829576" name="Field_3">
 			<table_ref uuid="4469B6A0BCA54FC39DCEED76A629F638" name="Table_1"/>
 		</field_ref>
@@ -43,11 +43,6 @@
 			<table_ref uuid="C13D954FAB7C4A3F93B9D124030301AB" name="Table_2"/>
 		</field_ref>
 	</index>
-	<index kind="regular" uuid="D32D7754D2F045CFBD0143F7A945AACD" type="1">
-		<field_ref uuid="ED00A82206DA4CC98B16EBD82F11F618" name="Field_2">
-			<table_ref uuid="4469B6A0BCA54FC39DCEED76A629F638" name="Table_1"/>
-		</field_ref>
-	</index>
 	<index kind="regular" uuid="D7AA94F9608746E5B3FF2DE16E513E3F" type="1">
 		<field_ref uuid="D804EF1116C5401AABB345A20F01A4BC" name="Field_4">
 			<table_ref uuid="C13D954FAB7C4A3F93B9D124030301AB" name="Table_2"/>
@@ -55,6 +50,11 @@
 	</index>
 	<index kind="regular" unique_keys="true" uuid="DE760AC75109461D92326866EDB071D5" type="7">
 		<field_ref uuid="53A48EA8961241D085E92964870E3B7B" name="ID">
+			<table_ref uuid="4469B6A0BCA54FC39DCEED76A629F638" name="Table_1"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F8CCA6552FF246CFA29E473703197E32" type="1">
+		<field_ref uuid="ED00A82206DA4CC98B16EBD82F11F618" name="Field_2">
 			<table_ref uuid="4469B6A0BCA54FC39DCEED76A629F638" name="Table_1"/>
 		</field_ref>
 	</index>

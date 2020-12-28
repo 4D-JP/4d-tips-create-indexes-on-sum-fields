@@ -5,6 +5,8 @@ CREATE FOLDER:C475($log_path;*)
 $enum_sum:=1  //command number for Sum
 $enum_field:=253  //command number for Field
 
+$dry_run:=False:C215
+
 ARRAY TEXT:C222($methods;0)
 METHOD GET PATHS:C1163(Path all objects:K72:16;$methods)
 
@@ -78,6 +80,8 @@ C_LONGINT:C283($number;$type;$length)
 
 $indexes:=New collection:C1472
 
+$lines:=New collection:C1472
+
 For each ($key;$fields)
 	
 	$field:=$fields[$key].field
@@ -85,17 +89,34 @@ For each ($key;$fields)
 	GET FIELD PROPERTIES:C258($field;$type;$length;$indexed)
 	
 	If (Not:C34($indexed))
+		
+		If ($lines.length=0)
+			$lines.push("ARRAY POINTER:C280($fieldsArray;1)")
+		End if 
+		
 		$table:=$fields[$key].table
-		ARRAY POINTER:C280($fieldsArray;1)
-		$fieldsArray{1}:=$field
-		CREATE INDEX:C966($table->;$fieldsArray;Standard BTree index:K58:3;$name;*)
-		$indexes.push(New object:C1471("table";$fields[$key].tableId;"field";$fields[$key].fieldId))
+		$lines.push("$fieldsArray{1}:=Field:C253("+String:C10($fields[$key].tableId)+";"+String:C10($fields[$key].fieldId)+")")
+		$lines.push("CREATE INDEX:C966(Table:C252("+String:C10($fields[$key].tableId)+")->;$fieldsArray;1;\"\";*)")
+		
+		If (Not:C34($dry_run))
+			ARRAY POINTER:C280($fieldsArray;1)
+			$fieldsArray{1}:=$field
+			CREATE INDEX:C966($table->;$fieldsArray;Standard BTree index:K58:3;$name;*)
+			$indexes.push(New object:C1471("table";$fields[$key].tableId;"field";$fields[$key].fieldId))
+		End if 
 	End if 
 	
 End for each 
 
 If ($indexes.length#0)
 	TEXT TO DOCUMENT:C1237($log_path+"info.txt";JSON Stringify:C1217($indexes;*))
+End if 
+
+If ($lines.length#0)
+	$code:=$lines.join("\r")
+	TEXT TO DOCUMENT:C1237($log_path+"code.txt";$code)
+	SET TEXT TO PASTEBOARD:C523($code)
+	OPEN URL:C673($log_path+"code.txt")
 End if 
 
 SHOW ON DISK:C922($log_path;*)
